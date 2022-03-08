@@ -1,56 +1,71 @@
+.sombra-caja {
+  box-shadow: 0px 5px 15px 0px rgba(51, 51, 51, 0.5);
+}
+.oswald {
+  font-family: "Oswald", sans-serif;
+  text-transform: uppercase;
+  font-weight: 400;
+}
 * {
   box-sizing: border-box;
 }
 body {
   margin: 0;
   padding: 0;
-  font-family: 'Lato', sans-serif;
-  color: #333333;
+  font-family: "Lato", sans-serif;
+  background-color: #333333;
+  color: #ffffff;
+  font-size: 18px;
   line-height: 28px;
 }
 h1,
 h2,
 h3 {
-  font-family: 'Oswald', sans-serif;
-  text-transform: uppercase;
   margin: 0;
   padding: 0;
+  font-family: "Oswald", sans-serif;
+  text-transform: uppercase;
+  font-weight: 400;
 }
 .intro {
-  width: 1340px;
-  height: 650px;
+  width: 92%;
   padding: 10px;
-  margin: 0 auto;
+  margin: 50px auto;
   position: relative;
+  background-color: #8841da;
+  border-radius: 8px;
+  box-shadow: 0px 5px 15px 0px rgba(51, 51, 51, 0.5);
 }
 .intro__imagen {
-  width: 100%;
-  position: absolute;
+  width: auto;
 }
 .intro__imagen img {
   width: 100%;
-  height: 624px;
   object-fit: cover;
 }
 .intro__contenido {
-  width: 50%;
+  width: 65%;
   margin: 0 auto;
   position: absolute;
   top: 156px;
   left: 0;
   right: 0;
   text-align: center;
-  color: #FFFFFF;
+  color: #ffffff;
 }
 .intro__categoria {
-  font-family: 'Oswald', sans-serif;
-  text-transform: uppercase;
+  font-size: 14px;
   color: rgba(255, 255, 255, 0.5);
+  font-family: "Oswald", sans-serif;
+  text-transform: uppercase;
+  font-weight: 400;
 }
 .intro__titulo {
-  font-family: 'Oswald', sans-serif;
-  text-transform: uppercase;
   font-size: 50px;
+  line-height: 60px;
+  font-family: "Oswald", sans-serif;
+  text-transform: uppercase;
+  font-weight: 400;
 }
 .intro__autor {
   width: 150px;
@@ -59,7 +74,7 @@ h3 {
   top: 400px;
   left: 0;
   right: 0;
-  color: #FFFFFF;
+  color: #ffffff;
 }
 .intro__autor img {
   width: 60px;
@@ -70,8 +85,14 @@ h3 {
 }
 .intro__autor span {
   display: inline-block;
+  line-height: 18px;
+  font-family: "Oswald", sans-serif;
+  text-transform: uppercase;
+  font-weight: 400;
 }
 .intro__autor-titulo {
+  padding: 6px 0 0;
+  font-size: 14px;
   color: rgba(255, 255, 255, 0.5);
 }
 .articulo--principal {
@@ -79,14 +100,53 @@ h3 {
   margin: 0 auto;
 }
 .articulo--principal__intro {
-  font-size: 28px;
-  line-height: 33px;
+  font-size: 25px;
+  line-height: 35px;
 }
 .articulo--principal h2 {
-  margin: 40px 0;
-  font-size: 50px;
+  margin: 50px 0;
   text-align: center;
+  color: #8841da;
+  font-size: 50px;
+  line-height: 60px;
 }
 .articulo--principal h3 {
+  margin: 48px 0 34px;
   color: #8841da;
+}
+.contenedor--cajas {
+  width: 92%;
+  margin: 0 auto 50px;
+  display: flex;
+  justify-content: space-between;
+}
+.caja {
+  max-width: 400px;
+  box-shadow: 0px 5px 15px 0px rgba(51, 51, 51, 0.5);
+}
+.caja__imagen {
+  width: auto;
+}
+.caja__imagen img {
+  width: 100%;
+}
+.caja__contenido {
+  padding: 25px;
+  padding-right: 55px;
+  border-radius: 0 0 10px 10px;
+  background-color: #8841da;
+}
+.caja__categoria {
+  display: none;
+  color: #ffffff;
+  font-family: "Oswald", sans-serif;
+  text-transform: uppercase;
+  font-weight: 400;
+}
+.caja a {
+  text-decoration: none;
+  color: #ffffff;
+  font-family: "Oswald", sans-serif;
+  text-transform: uppercase;
+  font-weight: 400;
 }
