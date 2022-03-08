@@ -1,2 +1,3 @@
 #Ignorar todos los .jpg de images
-images/.jpg
+.jpg
+.png
