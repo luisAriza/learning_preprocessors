@@ -1,22 +1,22 @@
 .estadistica--perfil {
   display: flex;
-  width: 50%;
+  width: 60%;
   height: 90px;
   padding-top: 15px;
   margin: 0 auto;
-  justify-content: space-around;
+  justify-content: space-evenly;
   @include caja;
   h3 {
-    font-family: $fuente2;
     font-weight: 600;
     font-size: 20px;
     text-align: center;
-    text-transform: uppercase;
+    @include titulos($fuente2);
   }
   span {
     font-size: 12px;
     text-align: center;
-    text-transform: uppercase;
-    font-family: $fuente2;
+    font-weight: 700;
+    color: get-opacity($color-primario, .5);
+    @include titulos($fuente2);
   }
 }
