@@ -1,31 +1,31 @@
 .estadistica--perfil {
-	display: flex;
-	width: 50%;
-	height: 80px;
-	padding-top: 15px;
-	margin: 0 auto;
-	justify-content: space-around;
-	border-radius: 20px;
-	background-color: $color-claro;
-	@include caja;
-	h3 {
-		font-weight: 600;
-		font-size: 20px;
-		text-align: center;
-		@include titulos($Fuente2);
-	}
-	span {
-		font-size: 12px;
-		text-align: center;
-		color: get-opacity($color-primario, .5);
-		@include titulos($Fuente2);
-	}
+  display: flex;
+  width: 60%;
+  height: 90px;
+  margin: 0 auto;
+  padding-top: 15px;
+  border-radius: 10px;
+  justify-content: space-evenly;
+  @include caja;
+  h3 {
+    font-weight: 600;
+    font-size: 20px;
+    text-align: center;
+    @include titulos($Fuente2);
+  }
+  span {
+    font-size: 12px;
+    text-align: center;
+    font-weight: 700;
+    color: get-opacity($color-primario, .5);
+    @include titulos($Fuente2);
+  }
 }
 
 .estadistica--articulos {
 	height: 70px;
 	padding: 20px;
-	border-top: 1px solid #E9E9E9;
+	border-top: 1px solid get-opacity($color-claro, .25);
 	
 	ul {
 		display: flex;
@@ -35,9 +35,9 @@
 	}
 		li {
 			list-style: none;
-			color: get-opacity($color-primario, .20);
+			color: get-opacity($color-claro, .25);
 		}
-			span  {
+			span {
 			margin-left: 10px;
 		}
 	}

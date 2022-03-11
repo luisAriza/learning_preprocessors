@@ -1,0 +1,33 @@
+.footer--principal {
+  display: flex;
+  height: 120px;
+  padding: 0 20px 20px 20px;
+  border-top: 1px solid #c5c5c5;
+  background-color: $color-primario;
+}
+
+.nav--footer ul {
+  display: flex;
+  padding-top: 35px;
+  li {
+    list-style: none;
+    margin-right: 50px;
+  }
+  a {
+    color: $color-claro;
+    @include titulos($Fuente2);
+  }
+}
+
+.nav--social {
+  margin-left: auto;
+  ul {
+    display: flex;
+    padding-top: 35px;
+    li {
+      list-style: none;
+      margin-right: 50px;
+      color: $color-claro;
+    }
+  }
+}

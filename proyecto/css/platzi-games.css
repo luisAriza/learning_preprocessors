@@ -459,7 +459,7 @@ h1 {
   font-size: 30px;
   font-family: "Oswald", sans-serif;
   text-transform: uppercase;
-  font-weight: 700;
+  font-weight: 500;
   margin: 0;
 }
 
@@ -467,7 +467,7 @@ h2 {
   font-size: 25px;
   font-family: "Oswald", sans-serif;
   text-transform: uppercase;
-  font-weight: 700;
+  font-weight: 500;
   margin: 0;
 }
 
@@ -475,7 +475,7 @@ h3 {
   font-size: 20px;
   font-family: "Oswald", sans-serif;
   text-transform: uppercase;
-  font-weight: 700;
+  font-weight: 500;
   margin: 0;
 }
 
@@ -489,50 +489,52 @@ body {
 main {
   display: flex;
   width: 100%;
-  height: 100vh;
+  height: 100%;
 }
 
 .perfil {
   width: 50%;
   padding-top: 50px;
-  color: #FFF;
-  background-color: #8841DA;
+  color: rgba(136, 65, 218, 0.9);
+  background-color: #FFF;
 }
 .perfil__avatar {
   display: block;
   margin: 0 auto;
-  border-radius: 50em;
+  border-radius: 2em;
 }
 .perfil__nombre, .perfil__minibio h2 {
+  font-size: 20px;
   text-align: center;
-  font-size: 25px;
+  margin: 10px;
   font-family: "Oswald", sans-serif;
   text-transform: uppercase;
-  font-weight: 700;
+  font-weight: 500;
 }
 .perfil__titulo, .perfil__minibio h3 {
-  display: block;
   text-transform: uppercase;
   text-align: center;
-  font-weight: 700;
   font-size: 12px;
-  color: rgba(255, 255, 255, 0.5);
+  font-family: "Oswald", sans-serif;
+  text-transform: uppercase;
+  font-weight: 500;
+  color: rgba(63, 87, 154, 0.6);
 }
 .perfil__boton {
   display: block;
   width: 100px;
-  height: 40px;
-  margin: 15px auto;
-  padding-top: 5px;
+  height: 36px;
+  margin: 28px auto;
+  padding-top: 6px;
+  border: 0;
   border-radius: 20px;
   text-decoration: none;
   text-align: center;
   color: #FFF;
+  background-color: #333333;
   font-family: "Oswald", sans-serif;
   text-transform: uppercase;
-  font-weight: 700;
-  border: 2px solid rgba(255, 255, 255, 0.3);
-  background-color: rgba(0, 0, 0, 0.1);
+  font-weight: 500;
 }
 
 .perfil__minibio {
@@ -541,15 +543,14 @@ main {
 }
 .estadistica--perfil {
   display: flex;
-  width: 50%;
-  height: 80px;
-  padding-top: 15px;
+  width: 60%;
+  height: 90px;
   margin: 0 auto;
-  justify-content: space-around;
-  border-radius: 20px;
-  background-color: #FFF;
+  padding-top: 15px;
+  border-radius: 10px;
+  justify-content: space-evenly;
   color: #333333;
-  box-shadow: 0px 20px 33px 0px rgba(0, 0, 0, 0.2);
+  box-shadow: 0px 10px 20px 0px rgba(0, 0, 0, 0.25);
 }
 .estadistica--perfil h3 {
   font-weight: 600;
@@ -557,21 +558,22 @@ main {
   text-align: center;
   font-family: "Oswald", sans-serif;
   text-transform: uppercase;
-  font-weight: 700;
+  font-weight: 500;
 }
 .estadistica--perfil span {
   font-size: 12px;
   text-align: center;
+  font-weight: 700;
   color: rgba(51, 51, 51, 0.5);
   font-family: "Oswald", sans-serif;
   text-transform: uppercase;
-  font-weight: 700;
+  font-weight: 500;
 }
 
 .estadistica--articulos {
   height: 70px;
   padding: 20px;
-  border-top: 1px solid #E9E9E9;
+  border-top: 1px solid rgba(255, 255, 255, 0.25);
 }
 .estadistica--articulos ul {
   display: flex;
@@ -581,27 +583,27 @@ main {
 }
 .estadistica--articulos li {
   list-style: none;
-  color: rgba(51, 51, 51, 0.2);
+  color: rgba(255, 255, 255, 0.25);
 }
 .estadistica--articulos span {
   margin-left: 10px;
 }
 
 .ubicacion--perfil {
-  width: 50%;
-  height: 80px;
-  margin: 30px auto 0 auto;
+  width: 60%;
+  height: 90px;
+  margin: 30px auto 50px;
   padding: 20px 0 0 50px;
-  border-radius: 20px;
-  background-color: #FFF;
+  border-radius: 10px;
   color: #333333;
-  box-shadow: 0px 20px 33px 0px rgba(0, 0, 0, 0.2);
+  box-shadow: 0px 10px 20px 0px rgba(0, 0, 0, 0.25);
 }
 .ubicacion--perfil i {
   display: block;
   float: left;
-  padding-right: 10px;
-  font-size: 40px;
+  padding-right: 15px;
+  padding-top: 5px;
+  font-size: 35px;
   color: #3f579a;
 }
 .ubicacion--perfil h2 {
@@ -609,77 +611,98 @@ main {
   font-size: 20px;
   font-family: "Oswald", sans-serif;
   text-transform: uppercase;
-  font-weight: 700;
+  font-weight: 500;
 }
 .ubicacion--perfil h3 {
   font-size: 12px;
   color: rgba(51, 51, 51, 0.5);
   font-family: "Oswald", sans-serif;
   text-transform: uppercase;
-  font-weight: 700;
+  font-weight: 500;
 }
 
 .galeria {
-  width: 50%;
-  height: 250px;
-  margin: 10px auto;
-  padding: 20px 0 0 30px;
+  width: 60%;
+  height: auto;
+  margin: 10px auto 60px;
+  padding: 20px 0 30px 35px;
+  border-radius: 10px;
   justify-content: space-evenly;
-  border-radius: 20px;
-  background-color: #FFF;
   color: #333333;
-  box-shadow: 0px 20px 33px 0px rgba(0, 0, 0, 0.2);
+  box-shadow: 0px 10px 20px 0px rgba(0, 0, 0, 0.25);
 }
 .galeria__foto-principal {
   float: left;
-  margin-right: 10px;
+  margin-right: 15px;
+}
+.galeria__fotos-adicionales {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: 70px 70px;
+  gap: 15px;
+  width: 160px;
+}
+.galeria__foto-principal img {
+  height: 155px;
 }
 .galeria__fotos-adicionales img {
   height: 70px;
-  margin-right: 5px;
-  margin-bottom: 5px;
+}
+.galeria__fotos-adicionales img:nth-child(1) {
+  grid-area: 1/1/1/3;
+}
+.galeria__fotos-adicionales img:nth-child(2) {
+  grid-area: 2/1;
+  width: 100%;
+}
+.galeria__fotos-adicionales img:nth-child(3) {
+  grid-area: 2/2;
+  width: 100%;
 }
 .galeria h2 {
-  margin-bottom: 10px;
+  margin-bottom: 15px;
+  text-transform: uppercase;
+  font-family: "Oswald", sans-serif;
   font-weight: 600;
   font-size: 20px;
-  font-family: "Oswald", sans-serif;
-  text-transform: uppercase;
-  font-weight: 700;
 }
 .galeria img {
   border-radius: 10px;
 }
 
 .articulos {
-  width: 40%;
-  padding: 50px 0 0 50px;
+  width: 50%;
+  padding: 50px 0 0 120px;
+  color: #FFF;
+  background-color: #333333;
 }
 
 .articulo {
-  margin-bottom: 75px;
+  margin-bottom: 80px;
   border-bottom: 3px solid #8841DA;
 }
 .articulo__categoria {
   font-weight: 500;
-  font-size: 14px;
+  font-size: 16px;
   color: #8841DA;
   font-family: "Oswald", sans-serif;
   text-transform: uppercase;
-  font-weight: 700;
+  font-weight: 500;
 }
 .articulo__titulo {
+  margin-bottom: 10px;
+  padding-right: 100px;
   font-size: 20px;
-  color: #333333;
+  font-weight: 400;
   font-family: "Oswald", sans-serif;
   text-transform: uppercase;
-  font-weight: 700;
+  font-weight: 500;
 }
 .articulo__descripcion {
+  margin-bottom: 20px;
+  padding-right: 80px;
   font-size: 18px;
-  line-height: 30px;
-  margin-bottom: 30px;
-  padding-right: 100px;
+  line-height: 25px;
 }
 
 .articulo--principal {
@@ -689,34 +712,42 @@ main {
 .articulo--principal__intro {
   font-size: 25px;
 }
+.articulo--principal h2 {
+  margin: 40px 0;
+  text-align: center;
+  font-size: 50px;
+}
 .articulo--principal h3 {
+  margin: 30px 0 20px;
   color: #8841DA;
 }
-.articulo--principal h2 {
-  margin: 40px 0 40px 0;
-  text-align: center;
+.articulo--principal p:nth-child(1) {
+  line-height: 32px;
+}
+.articulo--principal p {
+  line-height: 26px;
 }
 
 .intro {
-  width: 1340px;
-  height: 650px;
-  padding: 10px;
-  margin: 0 auto;
+  width: 92%;
+  padding: 10px 0;
+  margin: 50px auto;
   position: relative;
+  border-radius: 15px;
+  background-color: #333333;
   color: #333333;
-  box-shadow: 0px 20px 33px 0px rgba(0, 0, 0, 0.2);
+  box-shadow: 0px 10px 20px 0px rgba(0, 0, 0, 0.25);
 }
 .intro__imagen {
-  width: 1320px;
-  position: absolute;
+  width: auto;
 }
 .intro__imagen img {
   width: 100%;
-  height: 624px;
+  border-radius: 8px;
   object-fit: cover;
 }
 .intro__contenido {
-  width: 50%;
+  width: 65%;
   margin: 0 auto;
   position: absolute;
   top: 156px;
@@ -729,7 +760,7 @@ main {
   color: rgba(255, 255, 255, 0.5);
   font-family: "Oswald", sans-serif;
   text-transform: uppercase;
-  font-weight: 700;
+  font-weight: 500;
 }
 .intro__titulo {
   font-size: 50px;
@@ -754,51 +785,61 @@ main {
   display: inline-block;
   font-family: "Oswald", sans-serif;
   text-transform: uppercase;
-  font-weight: 700;
+  font-weight: 500;
 }
 .intro__autor-titulo {
+  color: rgba(255, 255, 255, 0.5);
   font-family: "Oswald", sans-serif;
   text-transform: uppercase;
-  font-weight: 700;
-  color: rgba(255, 255, 255, 0.5);
+  font-weight: 500;
 }
 
 .contenedor--cajas {
-  max-width: 1400px;
-  margin: 0 auto;
+  max-width: 92%;
+  margin: 0 auto 40px;
   display: flex;
-  justify-content: space-evenly;
+  justify-content: space-between;
 }
 
 .caja {
-  max-width: 430px;
+  max-width: 400px;
+  margin-bottom: 40px;
+  border-radius: 15px;
+  background-color: #333333;
   color: #333333;
-  box-shadow: 0px 20px 33px 0px rgba(0, 0, 0, 0.2);
+  box-shadow: 0px 10px 20px 0px rgba(0, 0, 0, 0.25);
 }
 .caja__contenido {
+  color: #FFF;
   padding: 25px;
-  background-color: #FFF;
+  border-radius: 0 0 10px 10px;
+}
+.caja__contenido h3 {
+  height: 60px;
+  margin: 5px 0 8px;
 }
 .caja__categoria {
   color: #8841DA;
   font-family: "Oswald", sans-serif;
   text-transform: uppercase;
-  font-weight: 700;
+  font-weight: 500;
 }
 
 .contenedor--cajas .caja a {
   text-decoration: none;
   color: #3f579a;
+  cursor: pointer;
   font-family: "Oswald", sans-serif;
   text-transform: uppercase;
-  font-weight: 700;
+  font-weight: 500;
 }
 
 .contenido {
   margin-bottom: 40px;
-  justify-content: space-evenly;
+  justify-content: space-between;
   display: flex;
-  width: 90%;
+  flex-wrap: wrap;
+  width: 92%;
   margin: 0 auto;
   padding: 30px 0;
 }
@@ -806,7 +847,7 @@ main {
 .buscador {
   width: 100%;
   height: 250px;
-  padding: 100px;
+  padding: 95px;
   background-image: url("../images/cover.jpg");
   background-size: cover;
   text-align: center;
@@ -824,37 +865,43 @@ main {
   display: flex;
   width: 90%;
   margin: 0 auto;
-  padding: 30px 0;
+  padding: 30px 0 20px;
 }
 .encabezado--con-filtros h2 {
-  margin-top: 10px;
-  font-size: 30px;
+  font-size: 40px;
   font-family: "Oswald", sans-serif;
   text-transform: uppercase;
-  font-weight: 700;
+  font-weight: 500;
 }
 .encabezado--con-filtros .filtros {
-  width: 250px;
-  height: 60px;
-  padding: 20px;
+  display: flex;
+  justify-content: space-between;
+  width: 220px;
+  height: 75px;
+  padding: 22px;
+  border-radius: 5px;
   margin-left: auto;
   color: #333333;
-  box-shadow: 0px 20px 33px 0px rgba(0, 0, 0, 0.2);
+  box-shadow: 0px 10px 20px 0px rgba(0, 0, 0, 0.25);
 }
 .encabezado--con-filtros span {
   font-family: "Oswald", sans-serif;
   text-transform: uppercase;
-  font-weight: 700;
+  font-weight: 500;
+  color: rgba(51, 51, 51, 0.9);
 }
 .encabezado--con-filtros a {
-  margin-left: 20px;
-  color: #ccc;
-  font-size: 20px;
+  align-self: flex-end;
+  font-size: 26px;
+  color: rgba(51, 51, 51, 0.9);
+  text-decoration: none;
+}
+.encabezado--con-filtros a:nth-child(2) {
+  margin-left: 10px;
 }
 
 .header--principal {
   display: flex;
-  margin-bottom: 20px;
   padding: 0 20px 20px 20px;
   width: 100%;
   height: 90px;
@@ -873,7 +920,7 @@ main {
   color: #3f579a;
   font-family: "Oswald", sans-serif;
   text-transform: uppercase;
-  font-weight: 700;
+  font-weight: 500;
 }
 
 .header__busqueda {
@@ -893,8 +940,43 @@ main {
   color: #3f579a;
   font-family: "Oswald", sans-serif;
   text-transform: uppercase;
-  font-weight: 700;
-  letter-spacing: 20px;
+  font-weight: 500;
+}
+
+.footer--principal {
+  display: flex;
+  height: 120px;
+  padding: 0 20px 20px 20px;
+  border-top: 1px solid #c5c5c5;
+  background-color: #333333;
+}
+
+.nav--footer ul {
+  display: flex;
+  padding-top: 35px;
+}
+.nav--footer ul li {
+  list-style: none;
+  margin-right: 50px;
+}
+.nav--footer ul a {
+  color: #FFF;
+  font-family: "Oswald", sans-serif;
+  text-transform: uppercase;
+  font-weight: 500;
+}
+
+.nav--social {
+  margin-left: auto;
+}
+.nav--social ul {
+  display: flex;
+  padding-top: 35px;
+}
+.nav--social ul li {
+  list-style: none;
+  margin-right: 50px;
+  color: #FFF;
 }
 
 /*# sourceMappingURL=platzi-games.css.map */

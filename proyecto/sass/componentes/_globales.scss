@@ -16,7 +16,7 @@ $color-claro: #FFF;
 //Mixins
 @mixin caja {
 	color: $color-primario;
-	box-shadow: 0px 20px 33px 0px rgba(0,0,0,0.20);
+	box-shadow: 0px 10px 20px 0px rgba(0,0,0,0.25);
 }
 
 @mixin titulos($fuente) {
@@ -25,7 +25,7 @@ $color-claro: #FFF;
 	} @else {
 		font-family: $Fuente2;
 		text-transform: uppercase;
-		font-weight: 700;
+		font-weight: 500;
 	}
 }
 
@@ -53,5 +53,5 @@ body {
 main {
 	display: flex;
 	width: 100%;
-	height: 100vh;
+	height: 100%;
 }

@@ -2,25 +2,32 @@
 	display: flex;
 	width: 90%;
 	margin: 0 auto;
-	padding: 30px 0;
+	padding: 30px 0 20px;
 	h2 {
-		margin-top: 10px;
-		font-size: 30px;
+		font-size: 40px;
 		@include titulos($Fuente2);
 	}
 	.filtros {
-		width: 250px;
-		height: 60px;
-		padding: 20px;
+		display: flex;
+		justify-content: space-between;
+		width: 220px;
+		height: 75px;
+		padding: 22px;
+		border-radius: 5px;
 		margin-left: auto;
 		@include caja;
-	}
+		}
 		span {
 			@include titulos($Fuente2);
+			color: get-opacity($color-primario, .9)
 		}
 		a {
-			margin-left: 20px;
-			color: #ccc;
-			font-size: 20px;
+			align-self: flex-end;
+			font-size: 26px;
+			color: get-opacity($color-primario, .9);
+			text-decoration: none;
+			&:nth-child(2){
+				margin-left: 10px;
+			}
 		}
 }
