@@ -1,19 +1,24 @@
 .encabezado--con-filtros
 	contenedor()
 	h2
-		margin-top 10px
 		font-size 50px
 		titulos(fuente2)
 	.filtros
-			width 250px
+			display flex
+			justify-content space-between
+			width 220px
 			height 75px
-			padding 20px
+			padding 22px
+			border-radius 5px
 			margin-left auto
 			caja-sombra()
 			span
 				titulos(fuente2)
+				color opacidad(color-primario, .9)
 			a
-				margin-left 20px
-				font-size 25px
-				color color-primario
+				align-self flex-end
+				font-size 26px
+				color opacidad(color-primario, .9)
 				text-decoration none
+			a:nth-child(2)
+				margin-left 10px

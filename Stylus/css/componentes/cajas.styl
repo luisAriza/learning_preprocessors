@@ -2,9 +2,12 @@
 	margin-bottom 40px
 	justify-content space-between
 	contenedor()
+	flex-wrap: wrap
 
 .caja
 	max-width 390px
+	margin-bottom 50px
+	border-radius 10px
 	caja-sombra()
 	img
 		width 100%
@@ -13,9 +16,12 @@
 		padding 20px
 		background-color color-claro
 		span
-			color color-secundario
+			font-size 20px
+			color opacidad(color-secundario, .8)
 			titulos(fuente2)
 		h3
+			height 60px
+			margin 4px 0 10px
 			font-weight normal
 			titulos(fuente2)
 
