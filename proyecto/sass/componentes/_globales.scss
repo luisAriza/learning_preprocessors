@@ -1,4 +1,4 @@
-//ver diseno
+//ver diseño
 //explicar estructura completa
 //hacer header
 //hacer footer
@@ -20,7 +20,7 @@ $color-claro: #FFF;
 }
 
 @mixin titulos($fuente) {
-	@if $fuente ==$Fuente1 {
+	@if $fuente == $Fuente1 {
 		font-family: $Fuente1;
 	} @else {
 		font-family: $Fuente2;

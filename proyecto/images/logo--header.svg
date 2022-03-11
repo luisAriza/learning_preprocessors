@@ -20,10 +20,10 @@
                 </g>
             </g>
             <text id="Games" font-family="Lato-Black, Lato" font-size="30" font-weight="700" fill="#012179">
-                <tspan x="167.363281" y="58.0234375">Games</tspan>
+                <tspan x="200.363281" y="57.0234375">Games</tspan>
             </text>
         </g>
-        <text id="Platzi" font-family="ABeeZee-Regular, ABeeZee" font-size="35" font-weight="normal" fill="#8840DA">
+        <text id="Platzi" font-family="ABeeZee-Regular, ABeeZee" font-size="35" font-weight="600" fill="#8840DA">
             <tspan x="75" y="57">Platzi</tspan>
         </text>
     </g>
