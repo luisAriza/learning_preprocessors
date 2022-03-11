@@ -1,44 +1,104 @@
 .contenedor--cajas {
-	max-width: 92%;
-	margin: 0 auto 40px;
-	display: flex;
-	justify-content: space-between;
+  max-width: 92%;
+  margin: 0 auto 40px;
+  display: flex;
+  justify-content: space-between;
 }
 
 .caja {
-	max-width: 400px;
-	margin-bottom: 40px;
-	border-radius: 15px;
-	background-color: $color-primario;
-	@include caja;
-	&__contenido {
-		color: $color-claro;
-		padding: 25px;
-		border-radius: 0 0 10px 10px;
-		h3{
-			height: 60px;
-			margin: 5px 0 8px;
-		}
-	}
-	&__categoria {
-		color: $color-secundario;
-		@include titulos($Fuente2);
-	}
+  max-width: 400px;
+  margin-bottom: 40px;
+  border-radius: 15px;
+  background-color: $color-primario;
+  @include caja;
+  &__contenido {
+    color: $color-claro;
+    padding: 25px;
+    border-radius: 0 0 10px 10px;
+    h3 {
+      height: 60px;
+      margin: 5px 0 8px;
+    }
+  }
+  &__categoria {
+    color: $color-secundario;
+    @include titulos($Fuente2);
+  }
 }
 
 .contenedor--cajas .caja a {
-	text-decoration: none;
-	color: $color-variacion;
-	cursor: pointer;
-	@include titulos($Fuente2);
+  text-decoration: none;
+  color: $color-variacion;
+  cursor: pointer;
+  @include titulos($Fuente2);
 }
 
 .contenido {
-	margin-bottom: 40px;
-	justify-content: space-between;
-	display: flex;
-	flex-wrap: wrap;
-	width: 92%;
-	margin: 0 auto;
-	padding: 30px 0;
-} 
+  margin-bottom: 40px;
+  justify-content: space-between;
+  display: flex;
+  flex-wrap: wrap;
+  width: 92%;
+  margin: 0 auto;
+  padding: 30px 0;
+}
+
+.caja--con-fondo {
+  display: block;
+  box-shadow: none;
+  position: relative;
+  overflow: hidden;
+  background-color: $color-primario;
+  img {
+    display: block;
+    max-width: 100%;
+    max-height: auto;
+    position: absolute;
+    opacity: 0.5;
+    object-fit: contain;
+  }
+  &__contenido {
+    padding: 20px;
+    position: absolute;
+    text-align: center;
+    color: $color-claro;
+    p {
+      color: $color-claro;
+    }
+    h3 {
+      color: $color-claro;
+    }
+  }
+  &__categoria {
+    display: block;
+    width: auto;
+    max-width: 100px;
+    margin: 0 auto;
+    text-align: center;
+    color: $color-claro;
+    background-color: $color-secundario;
+    @include titulos($Fuente2);
+  }
+}
+
+.caja--grande {
+	max-width: 100%;
+	height: 550px;
+	h2 {
+		@include titulos($Fuente2);
+		@include font-size(50px);
+	}
+	.caja--con-fondo__contenido {
+		padding-top: 200px;
+	}
+}
+
+.caja--mediana {
+	max-width: 100%;
+	// height: 250px;
+}
+
+.caja--pequena {
+	max-width: 100%;
+	// height: 250px;
+}
