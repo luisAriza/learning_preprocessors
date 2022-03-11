@@ -455,6 +455,8 @@ output {
 }
 
 /*# sourceMappingURL=bootstrap-reboot.css.map */
+/* Media Queries Mixin
+**********************/
 h1 {
   font-size: 30px;
   font-family: "Oswald", sans-serif;
@@ -590,6 +592,31 @@ main {
 }
 .estadistica--articulos span {
   margin-left: 10px;
+}
+
+.caja--con-fondo__stats {
+  width: 280px;
+  height: 94%;
+  margin: 0 auto;
+  text-align: center;
+}
+.caja--con-fondo__stats ul {
+  display: flex;
+  height: 100%;
+  justify-content: space-around;
+  align-items: flex-end;
+  margin: 0;
+  padding: 0;
+}
+.caja--con-fondo__stats li {
+  opacity: 0.8;
+}
+.caja--con-fondo__stats i {
+  margin-right: 10px;
+  color: #FFF;
+}
+.caja--con-fondo__stats span {
+  color: #FFF;
 }
 
 .ubicacion--perfil {
@@ -906,6 +933,9 @@ main {
 .caja--mediana {
   max-width: 100%;
 }
+.caja--mediana img {
+  height: 100%;
+}
 
 .caja--pequena {
   max-width: 100%;
@@ -976,7 +1006,7 @@ main {
 }
 
 .nav--header ul {
-  display: flex;
+  display: none;
   padding-top: 35px;
 }
 .nav--header ul li {
@@ -989,9 +1019,14 @@ main {
   text-transform: uppercase;
   font-weight: 500;
 }
+@media only screen and (min-width: 992px) {
+  .nav--header ul {
+    display: flex;
+  }
+}
 
 .header__busqueda {
-  display: flex;
+  display: none;
   margin-left: auto;
   padding-top: 35px;
 }
@@ -1008,6 +1043,11 @@ main {
   font-family: "Oswald", sans-serif;
   text-transform: uppercase;
   font-weight: 500;
+}
+@media only screen and (min-width: 992px) {
+  .header__busqueda {
+    display: flex;
+  }
 }
 
 .footer--principal {
@@ -1047,16 +1087,22 @@ main {
 }
 
 .contenedor--home {
-  width: 92%;
-  height: 1200px;
-  margin: 0 auto;
-  display: -ms-grid;
-  display: grid;
-  gap: 20px;
-  -ms-grid-columns: repeat(4, 1fr);
-  grid-template-columns: repeat(4, 1fr);
-  -ms-grid-rows: repeat(4, 1fr);
-  grid-template-rows: repeat(4, 1fr);
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+}
+@media only screen and (min-width: 992px) {
+  .contenedor--home {
+    width: 92%;
+    margin: 50px auto 80px;
+    display: -ms-grid;
+    display: grid;
+    -ms-grid-columns: repeat(4, 1fr);
+    grid-template-columns: repeat(4, 1fr);
+    -ms-grid-rows: repeat(4, 1fr);
+    grid-template-rows: repeat(4, 1fr);
+    gap: 20px;
+  }
 }
 
 .caja--grande {
