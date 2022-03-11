@@ -1,10 +1,22 @@
+h3 {
+  font-size: 20px;
+  margin: 0;
+}
+h2 {
+  font-size: 25px;
+  margin: 0;
+}
+h1 {
+  font-size: 30px;
+  margin: 0;
+}
 * {
   box-sizing: border-box;
 }
 body {
   margin: 0;
-  font-family: 'Lato', sans-serif;
   color: #333;
+  font-family: 'Lato', sans-serif;
 }
 .buscador {
   width: 100%;
@@ -30,24 +42,77 @@ body {
 }
 .encabezado--con-filtros h2 {
   margin-top: 10px;
-  text-transform: uppercase;
-  font-weight: 500;
   font-size: 50px;
   font-family: 'Oswald', sans-serif;
+  font-weight: 600;
+  text-transform: uppercase;
 }
 .encabezado--con-filtros .filtros {
   width: 250px;
   height: 75px;
   padding: 20px;
   margin-left: auto;
+  background-color: #fff;
+  box-shadow: 0px 20px 33px 0px rgba(0,0,0,0.2);
 }
 .encabezado--con-filtros .filtros span {
-  text-transform: uppercase;
   font-family: 'Oswald', sans-serif;
+  font-weight: 600;
+  text-transform: uppercase;
 }
 .encabezado--con-filtros .filtros a {
   margin-left: 20px;
   font-size: 25px;
   color: #333;
   text-decoration: none;
+}
+.contenido {
+  margin-bottom: 40px;
+  justify-content: space-between;
+  display: flex;
+  width: 90%;
+  margin: 0 auto;
+  padding: 30px 0;
+}
+.caja {
+  max-width: 390px;
+  background-color: #fff;
+  box-shadow: 0px 20px 33px 0px rgba(0,0,0,0.2);
+}
+.caja img {
+  width: 100%;
+  object-fit: cover;
+}
+.caja__contenido {
+  padding: 20px;
+  background-color: #fff;
+}
+.caja__contenido span {
+  color: #8841da;
+  font-family: 'Oswald', sans-serif;
+  font-weight: 600;
+  text-transform: uppercase;
+}
+.caja__contenido h3 {
+  font-weight: normal;
+  font-family: 'Oswald', sans-serif;
+  font-weight: 600;
+  text-transform: uppercase;
+}
+.estadistica--articulos {
+  height: 70px;
+  padding: 20px;
+  border-top: 1.5px solid rgba(51,51,51,0.2);
+}
+.estadistica--articulos ul {
+  display: flex;
+  margin: 0;
+  justify-content: space-evenly;
+}
+.estadistica--articulos ul li {
+  list-style: none;
+  color: rgba(51,51,51,0.4);
+}
+.estadistica--articulos ul span {
+  margin-left: 10px;
 }
